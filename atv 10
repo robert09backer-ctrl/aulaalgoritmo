@@ -1,0 +1,11 @@
+maior = None
+num = int(input("Digite um número inteiro (0 para sair): "))
+while num != 0:
+    if maior is None or num > maior:
+        maior = num
+    num = int(input("Digite um número inteiro (0 para sair): "))
+
+if maior is not None:
+    print(f"O maior número informado foi: {maior}")
+else:
+    print("Nenhum número foi informado.")
